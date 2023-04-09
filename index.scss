@@ -1,8 +1,23 @@
 ---
 ---
 
-nav ul {
+nav {
 	list-style-type: none;
 	margin: 0;
-	padding: 50px;
+	padding: 8px;
+	justify-content: center;
+	background-color: rgb(255, 255, 255);
+
+	li {
+		display: inline;
+	}
+
+	a {
+		padding: 8px;
+		text-decoration: none;
+	}
+
+	a:hover {
+		background-color: burlywood;
+	}
 }

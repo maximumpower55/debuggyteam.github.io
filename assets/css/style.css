@@ -2,7 +2,7 @@
 	--font: Arial, Helvetica, sans-serif;
 }
 
-h1, h2, p, li {
+h1, h2, p, li, a {
 	font-family: var(--font);
 }
 
