@@ -1,0 +1,7 @@
+exclude:
+  - CNAME
+include:
+  - CONTRIBUTING.md
+  - README.md
+plugins:
+  - jekyll-optional-front-matter
