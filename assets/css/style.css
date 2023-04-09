@@ -30,7 +30,7 @@ main {
 }
 
 /** Lists don't play super well with being centered */
-ul,ol {
+ul, ol {
 	max-width: 80ch;
 	margin-inline: auto;
 	text-align: left;
