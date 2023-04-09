@@ -1,7 +1,12 @@
 exclude:
   - CNAME
-include:
-  - CONTRIBUTING.md
-  - README.md
+  - LICENSE
+
+defaults:
+  - scope:
+      path: "" # Apply to all.
+    values:
+      layout: "default"
+
 plugins:
   - jekyll-optional-front-matter

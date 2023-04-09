@@ -1,0 +1,45 @@
+:root {
+	--font: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, p, li {
+	font-family: var(--font);
+}
+
+p {
+	font-size: 1.1rem;
+}
+
+a {
+	color:fuchsia;
+}
+
+a:hover {
+	color: hsl(300, 45%, 42%)
+}
+
+main {
+	max-width: 140ch;
+	margin-inline: auto;
+	text-align: center;
+}
+
+.updated {
+	font-size: 1.25rem;
+	margin-top: -20px;
+}
+
+/** Lists don't play super well with being centered */
+ul,ol {
+	max-width: 80ch;
+	margin-inline: auto;
+	text-align: left;
+}
+
+/** This deals with dark theme */
+@media screen and (prefers-color-scheme: dark) {
+	html {
+		background-color: hsl(0, 4%, 9%);
+		color: white;
+	}
+}
