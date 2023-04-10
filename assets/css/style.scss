@@ -1,6 +1,7 @@
 ---
 ---
 
+@import "colors";
 @import "navigation";
 
 :root {
@@ -16,10 +17,10 @@ p {
 }
 
 a {
-	color:fuchsia;
+	color: $link-color;
 
 	&:hover {
-		color: hsl(300, 45%, 42%)
+		color: $link-color-hover;
 	}
 }
 
@@ -49,7 +50,7 @@ ul, ol {
 /** This deals with dark theme */
 @media screen and (prefers-color-scheme: dark) {
 	html {
-		background-color: hsl(0, 4%, 9%);
-		color: white;
+		background-color: $background-color;
+		color: $text-color;
 	}
 }
