@@ -7,6 +7,7 @@ defaults:
       path: "" # Apply to all.
     values:
       layout: "default"
+      style: "style"
 
 plugins:
   - jekyll-optional-front-matter

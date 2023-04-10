@@ -7,18 +7,16 @@
 	<meta name="theme-color" content="#609FFF"/>
 	<meta property="og:title" content="{%if page.title%}{{page.title}} | {%endif%}Debuggy"/>
 	<meta property="og:description" content="{{page.description}}"/>
-	<link rel="stylesheet" href="/assets/css/style.css"/>
+	{% if page.style %}
+	<link rel="stylesheet" href="/assets/css/{{page.style}}.css"/>
+	{% endif %}
+	{% for style in page.styles %}
+	<link rel="stylesheet" href="/assets/css/{{style}}.css"/>
+	{% endfor %}
 </head>
 <body>
 
-<nav>
-	{% for item in site.data.navigation %}
-		{% capture htmllink %} {{item.link}}.html {% endcapture %}
-		<a href="{{item.link}}" {% if page.url==item.link or page.url==htmllink %} class="current"{%endif%}>
-			{{item.name}}
-		</a>
-	{% endfor %}
-</nav>
+{% include navigation.html %}
 
 <main>
 	{{content}}
