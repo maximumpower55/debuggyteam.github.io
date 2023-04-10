@@ -1,7 +1,7 @@
 nav {
 	list-style-type: none;
 	margin: 0;
-	padding: 8px;
+	padding: 16px;
 	justify-content: center;
 	background-color: rgb(255, 255, 255);
 	margin-top: -1px;
@@ -11,11 +11,12 @@ nav {
 	}
 
 	a {
-		padding: 8px;
+		padding: 16px;
 		text-decoration: none;
 	}
 
 	a:hover {
 		background-color: burlywood;
+		padding: 16px;
 	}
 }
