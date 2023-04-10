@@ -29,6 +29,11 @@ main {
 	margin-top: -20px;
 }
 
+/** Fix annoying padding */
+body {
+	margin: 0;
+}
+
 /** Lists don't play super well with being centered */
 ul, ol {
 	max-width: 80ch;
