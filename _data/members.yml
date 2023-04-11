@@ -1,0 +1,10 @@
+- name: test
+  role: test role
+  description: testing 1 2 3
+
+  discord: test#0000
+  github: test-git
+  personal-site: example.com
+
+  is-plural-system: true
+  system-memberlist-redacted: false
