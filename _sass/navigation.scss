@@ -22,10 +22,3 @@ nav {
 		}
 	}
 }
-
-@media screen and (prefers-color-scheme: dark) {
-	html {
-		background-color: $background-color;
-		color: $text-color;
-	}
-}
