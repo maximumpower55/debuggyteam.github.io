@@ -6,7 +6,7 @@ nav {
 	padding: 16px;
 	list-style-type: none;
 	justify-content: center;
-	background-color: $navbar-color;
+	background-color: var(--navbar-color);
 
 	li {
 		display: inline;
@@ -18,17 +18,8 @@ nav {
 
 		&:hover {
 			padding: 16px;
-			background-color: $navbar-select-color;
+			background-color: var(--navbar-select-color);
 		}
 	}
 }
 
-@media screen and (prefers-color-scheme: dark) {
-	nav {
-		background-color: $navbar-color-dark;
-
-		a:hover {
-			background-color: $navbar-select-color-dark;
-		}
-	}
-}

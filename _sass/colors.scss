@@ -1,28 +1,32 @@
-/* Main site colors */
-$background-color: hsl(0, 0%, 100%);
-$navbar-color: hsl(0, 13%, 88%);
-$navbar-select-color: hsl(0, 0%, 100%);
+:root {
+    /* Main site colors */
+    --background-color: hsl(0, 0%, 100%);
+    --navbar-color: hsl(0, 13%, 88%);
+    --navbar-select-color: hsl(0, 0%, 100%);
 
-/* Text and links */
-$link-color: hsl(240, 100%, 50%);
-$link-color-hover: hsl(177, 70%, 41%);
-$text-color: hsl(0, 0%, 0%);
+    /* Text and links */
+    --link-color: hsl(240, 100%, 50%);
+    --link-color-hover: hsl(177, 70%, 41%);
+    --text-color: hsl(0, 0%, 0%);
 
+    /* Miscellaneous Colors */
+    --debuggy-team: hsl(237, 84%, 64%);
+    --debuggy-team-border: hsl(237, 80%, 55%);
 
-/* Main site colors dark theme */
-$background-color-dark: hsl(0, 4%, 9%);
-$navbar-color-dark: hsl(0, 3%, 15%);
-$navbar-select-color-dark: hsl(0, 4%, 9%);
+    --debuggy-moderation: hsl(9, 69%, 68%);
+    --debuggy-moderation-border: hsl(9, 64%, 55%);
 
-/* Text and links dark theme */
-$link-color-dark: hsl(300, 100%, 50%);
-$link-color-hover-dark: hsl(300, 45%, 42%);
-$text-color-dark: hsl(0, 0%, 100%);
+    @media screen and (prefers-color-scheme: dark) {
+        html {
+            /* Main site colors dark theme */
+            --background-color-dark: hsl(0, 4%, 9%);
+            --navbar-color-dark: hsl(0, 3%, 15%);
+            --navbar-select-color-dark: hsl(0, 4%, 9%);
 
-
-/* Miscellaneous Colors */
-$debuggy-team: hsl(237, 84%, 64%);
-$debuggy-team-border: hsl(237, 80%, 55%);
-
-$debuggy-moderation: hsl(9, 69%, 68%);
-$debuggy-moderation-border: hsl(9, 64%, 55%);
+            /* Text and links dark theme */
+            --link-color-dark: hsl(300, 100%, 50%);
+            --link-color-hover-dark: hsl(300, 45%, 42%);
+            --text-color-dark: hsl(0, 0%, 100%);
+        }
+    }
+}
