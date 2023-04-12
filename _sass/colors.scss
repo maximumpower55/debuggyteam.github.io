@@ -1,16 +1,24 @@
-/*** Dark theme colors ***/
-
-/* BIG TODO: Figure out light and dark theme management where all colors for both themes are managed here.
-
 /* Main site colors */
-$background-color: hsl(0, 4%, 9%);
-$navbar-color: hsl(0, 3%, 15%);
-$navbar-select-color: hsl(0, 4%, 9%);
+$background-color: hsl(0, 0%, 100%);
+$navbar-color: hsl(0, 13%, 88%);
+$navbar-select-color: hsl(0, 0%, 100%);
 
 /* Text and links */
-$link-color: hsl(300, 100%, 50%);
-$link-color-hover: hsl(300, 45%, 42%);
-$text-color: hsl(0, 0%, 100%);
+$link-color: hsl(240, 100%, 50%);
+$link-color-hover: hsl(177, 70%, 41%);
+$text-color: hsl(0, 0%, 0%);
+
+
+/* Main site colors dark theme */
+$background-color-dark: hsl(0, 4%, 9%);
+$navbar-color-dark: hsl(0, 3%, 15%);
+$navbar-select-color-dark: hsl(0, 4%, 9%);
+
+/* Text and links dark theme */
+$link-color-dark: hsl(300, 100%, 50%);
+$link-color-hover-dark: hsl(300, 45%, 42%);
+$text-color-dark: hsl(0, 0%, 100%);
+
 
 /* Miscellaneous Colors */
 $debuggy-team: hsl(237, 84%, 64%);

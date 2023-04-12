@@ -22,3 +22,13 @@ nav {
 		}
 	}
 }
+
+@media screen and (prefers-color-scheme: dark) {
+	nav {
+		background-color: $navbar-color-dark;
+
+		a:hover {
+			background-color: $navbar-select-color-dark;
+		}
+	}
+}

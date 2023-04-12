@@ -47,15 +47,6 @@ ul, ol {
 	text-align: left;
 }
 
-/** This deals with dark theme */
-@media screen and (prefers-color-scheme: dark) {
-	html {
-		background-color: $background-color;
-		color: $text-color;
-	}
-}
-
-
 .profiles {
 	max-width: 300px;
 	border: 3px solid $debuggy-team-border;
@@ -96,6 +87,22 @@ ul, ol {
 
 		&:hover + .plural-info-hide {
 			display: block;
+		}
+	}
+}
+
+/** This deals with dark theme */
+@media screen and (prefers-color-scheme: dark) {
+	html {
+		background-color: $background-color-dark;
+		color: $text-color-dark;
+	}
+
+	a {
+		color: $link-color-dark;
+	
+		&:hover {
+			color: $link-color-hover-dark;
 		}
 	}
 }
