@@ -80,9 +80,7 @@ ul, ol {
 		border: 3px solid var(--debuggy-team-border);
 	}
 
-	/* idk why this doesn't style */
 	.plural-avatars {
-		margin-top: -1;
 
 		.redacted-heart {
 			position: relative;
@@ -93,6 +91,7 @@ ul, ol {
 				width: 240px;
 				padding: 5px;
 				border-radius: 6px;
+				opacity: 0.5;
 
 				/* Tooltip text positioning */
 				text-align: center;
@@ -119,7 +118,7 @@ ul, ol {
 				position: absolute;
 				top: 100%; /* At the bottom of the tooltip */
 				left: 50%;
-				margin-left: -5px;
+				margin-left: -10px;
 				border-width: 5px;
 				border-style: solid;
   				border-color: var(--background-color) transparent transparent transparent;
