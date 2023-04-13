@@ -48,36 +48,20 @@ ul, ol {
 }
 
 .profiles {
-	display: grid;
-	grid-template-columns: 1fr 300px 1fr;
-	grid-template-rows: 500px 400px;
-	place-items: center;
-
 	h1 {
 		margin: 0;
 		font-size: 28px;
 	}
 
-	a {
-		color: black;
-
-		&:hover {
-			color: darkgoldenrod;
-		}
-	}
-
 	.profile-card {
 		max-width: 300px;
-		border: 3px solid var(--debuggy-team-border);
 		margin: auto;
 		text-align: center;
-		background-color: var(--debuggy-team);
 	}
 
 	.profile-picture {
 		margin-top: 10px;
 		border-radius: 50%;
-		border: 3px solid var(--debuggy-team-border);
 	}
 
 	.plural-avatars {
@@ -135,6 +119,55 @@ ul, ol {
 	}
 }
 
+.profiles.dev-team {
+	display: grid;
+	row-gap: 73px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	place-items: center;
+
+	a {
+		color: black;
+
+		&:hover {
+			color: chartreuse;
+		}
+	}
+
+	.profile-card {
+		background-color: var(--debuggy-team);
+		border: 3px solid var(--debuggy-team-border);
+	}
+
+	.profile-picture {
+		border: 3px solid var(--debuggy-team-border);
+	}
+}
+
+.profiles.community-team {
+	display: grid;
+	row-gap: 73px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	place-items: center;
+
+	a {
+		color: black;
+
+		&:hover {
+			color:chartreuse;
+		}
+	}
+
+	.profile-card {
+		background-color: var(--debuggy-moderation);
+		border: 3px solid var(--debuggy-moderation-border);
+	}
+
+	.profile-picture {
+		border: 3px solid var(--debuggy-moderation-border);
+	}
+}
 
 
 

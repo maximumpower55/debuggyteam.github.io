@@ -1,4 +1,5 @@
 - name: test
+  team: development
   role: test role
   description: testing 1 2 3
 
@@ -8,3 +9,27 @@
 
   is-plural-system: true
   system-memberlist-redacted: false
+
+- name: test
+  team: community
+  role: test role 2
+  description: testing 3, 2, 1
+
+  discord: test#0000
+  github: test-git
+  personal-site: example.com
+
+  is-plural-system: false
+  system-memberlist-redacted: false
+
+- name: test
+  team: community
+  role: test role 2
+  description: testing 3, 2, 1
+
+  discord: test#0000
+  github: test-git
+  personal-site: example.com
+
+  is-plural-system: true
+  system-memberlist-redacted: true
