@@ -62,7 +62,7 @@ ul, ol {
 
 	.profile-card {
 		min-width: 250px;
-		max-width: 250px;
+		max-width: 275px;
 		margin: auto;
 		text-align: center;
 		padding: 8px;
@@ -79,7 +79,7 @@ ul, ol {
 			height: 30px;
 		}
 
-		max-height: fit-content;
+		max-height: 100px;
 		overflow: auto;
 
 		.redacted-heart {
