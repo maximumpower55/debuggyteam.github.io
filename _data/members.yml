@@ -1,8 +1,8 @@
 - name: Studiosys
   team: development
   role: debuggy dev
-  description: description not set  
- 
+  description: description not set
+
   social:
     github: peaceheis
     pronouns: he/him
@@ -13,11 +13,11 @@
 - name: Falkreon
   team: development
   role: debuggy dev
-  description: description not set  
- 
+  description: jankson author / disaster bi
+
   social:
     github: falkreon
-    pronouns: 
+    pronouns: he/they
 
   is-plural-system: false
   is-system-memberlist-redacted: false
@@ -25,11 +25,11 @@
 - name: Bubblie
   team: development
   role: debuggy dev
-  description: description not set  
- 
+  description: description not set
+
   social:
     github: Bubblie01
-    pronouns: 
+    pronouns:
 
   is-plural-system: false
   is-system-memberlist-redacted: false
@@ -37,8 +37,8 @@
 - name: woodiertexas
   team: development
   role: debuggy dev
-  description: description not set  
- 
+  description: description not set
+
   social:
     pfp-override: https://cdn.discordapp.com/avatars/788483848127905844/d2daa4f54fb04ff58319fc0602ee159a.webp
     github: woodiertexas
@@ -50,11 +50,11 @@
 - name: Octal
   team: development
   role: debuggy dev
-  description: description not set  
- 
+  description: description not set
+
   social:
     github: oliver-makes-code
-    pronouns: 
+    pronouns:
 
   is-plural-system: true
   is-system-memberlist-redacted: true
@@ -62,11 +62,11 @@
 - name: Xanderstuff
   team: development
   role: debuggy dev
-  description: description not set  
- 
+  description: description not set
+
   social:
     github: xanderstuff
-    pronouns: 
+    pronouns:
 
   is-plural-system: false
   is-system-memberlist-redacted: false
@@ -74,11 +74,11 @@
 - name: Tibs
   team: development
   role: debuggy dev
-  description: description not set 
- 
+  description: description not set
+
   social:
     github: TibiNonEst
-    pronouns: 
+    pronouns:
 
   is-plural-system: false
   is-system-memberlist-redacted: false
@@ -86,12 +86,13 @@
 - name: Ampflower
   team: development
   role: debuggy dev
-  description: 
-  
+  description:
+
   social:
     pronouns:
     github: Ampflower
-    personal-site: https://ampflower.gay/
-    
+    links:
+      personal-site: https://ampflower.gay/
+
   is-plural-system: false
   is-system-memberlist-redacted: false
