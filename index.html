@@ -14,58 +14,49 @@ description: The Debuggy home page.
 <h2>Debuggy Dev Team</h2>
 <p>Everyone listed here is involved with Debuggy projects code-wise.</p>
 <div class="profiles dev-team">
+    {% for card in site.data.members %}
     <i>
         <div class="profile-card">
-            <img class="profile-picture" src="https://cdn.discordapp.com/icons/912349224232943649/90c5433e15029bbdd96100408e23b7a9.webp" alt="test">
-            <h1>example name</h1>
+            <img class="profile-picture" src="{{card.social.profile-picture-url}}" alt="test">
+            <h1>{{card.name}}</h1>
+            {% if card.is-plural-system==true %}
             <p class="plurality">Plural System</p>
             <div class="plural-avatars">
-                <div class="redacted-heart"><i data-feather="heart"></i>
-                    <span class="redacted-info">Memberlist redacted by request.</span>
+                {% if card.system-memberlist-redacted==true %}
+                <div class="redacted-heart tooltip"><i data-feather="heart"></i>
+                    <span class="redacted-info tooltip-text">Memberlist redacted by request.</span>
                 </div>
-            </div>
-            <p class="title">Debuggy Lead Dev</p>
-            <p class="description">We are a group of people who like making Minecraft mods.</p>
-            <div class="socials">
-                <a href="#"><i data-feather="globe"></i></a>
-                <a href="#"><i data-feather="github"></i></a>
-                <a href="#"><i data-feather="gitlab"></i></a>
-            </div>
-        </div>
-    </i>
+                {% else %}
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
 
-    <i>
-        <div class="profile-card">
-            <img class="profile-picture" src="https://cdn.discordapp.com/icons/912349224232943649/90c5433e15029bbdd96100408e23b7a9.webp" alt="test">
-            <h1>example name</h1>
-            <p class="plurality">Plural System</p>
-            <div class="plural-avatars">
-                <div class="redacted-heart"><i data-feather="heart"></i>
-                    <span class="redacted-info">Memberlist redacted by request.</span>
-                </div>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                <i><img src="{{card.social.profile-picture-url}}"></i>
+                {% endif %}
             </div>
-            <p class="title">Debuggy Lead Dev</p>
-            <p class="description">We are a group of people who like making Minecraft mods.</p>
-            <div class="socials">
-                <a href="#"><i data-feather="globe"></i></a>
-                <a href="#"><i data-feather="github"></i></a>
-                <a href="#"><i data-feather="gitlab"></i></a>
-            </div>
-        </div>
-    </i>
+            {% endif %}
 
-    <i>
-        <div class="profile-card">
-            <img class="profile-picture" src="https://cdn.discordapp.com/icons/912349224232943649/90c5433e15029bbdd96100408e23b7a9.webp" alt="test">
-            <h1>example name</h1>
-            <p class="plurality">Plural System</p>
-            <div class="plural-avatars">
-                <div class="redacted-heart"><i data-feather="heart"></i>
-                    <span class="redacted-info">Memberlist redacted by request.</span>
-                </div>
-            </div>
-            <p class="title">Debuggy Lead Dev</p>
-            <p class="description">We are a group of people who like making Minecraft mods.</p>
+            <p class="title">{{card.role}}</p>
+            <p class="description">{{card.description}}</p>
+            <!--unsure what to do here-->
             <div class="socials">
                 <a href="#"><i data-feather="globe"></i></a>
                 <a href="#"><i data-feather="github"></i></a>
@@ -73,26 +64,7 @@ description: The Debuggy home page.
             </div>
         </div>
     </i>
-
-    <i>
-        <div class="profile-card">
-            <img class="profile-picture" src="https://cdn.discordapp.com/icons/912349224232943649/90c5433e15029bbdd96100408e23b7a9.webp" alt="test">
-            <h1>example name</h1>
-            <p class="plurality">Plural System</p>
-            <div class="plural-avatars">
-                <div class="redacted-heart"><i data-feather="heart"></i>
-                    <span class="redacted-info">Memberlist redacted by request.</span>
-                </div>
-            </div>
-            <p class="title">Debuggy Lead Dev</p>
-            <p class="description">We are a group of people who like making Minecraft mods.</p>
-            <div class="socials">
-                <a href="#"><i data-feather="globe"></i></a>
-                <a href="#"><i data-feather="github"></i></a>
-                <a href="#"><i data-feather="gitlab"></i></a>
-            </div>
-        </div>
-    </i>
+    {% endfor %}
 </div>
 
 <h2>Debuggy Community Team</h2>
@@ -110,26 +82,6 @@ description: The Debuggy home page.
                 </div>
             </div>
             <p class="title">Community Manager</p>
-            <p class="description">We are a group of people who like making Minecraft mods.</p>
-            <div class="socials">
-                <a href="#"><i data-feather="globe"></i></a>
-                <a href="#"><i data-feather="github"></i></a>
-                <a href="#"><i data-feather="gitlab"></i></a>
-            </div>
-        </div>
-    </i>
-
-    <i>
-        <div class="profile-card">
-            <img class="profile-picture" src="https://cdn.discordapp.com/icons/912349224232943649/90c5433e15029bbdd96100408e23b7a9.webp" alt="test">
-            <h1>example name</h1>
-            <p class="plurality">Plural System</p>
-            <div class="plural-avatars">
-                <div class="redacted-heart"><i data-feather="heart"></i>
-                    <span class="redacted-info">Memberlist redacted by request.</span>
-                </div>
-            </div>
-            <p class="title">Community Moderator</p>
             <p class="description">We are a group of people who like making Minecraft mods.</p>
             <div class="socials">
                 <a href="#"><i data-feather="globe"></i></a>

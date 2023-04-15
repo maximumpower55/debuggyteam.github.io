@@ -1,38 +1,41 @@
 - name: test
   team: development
-  role: test role
-  description: testing 1 2 3
-  profile-picture-url: https://example.com/
-
-  discord: test#0000
-  github: test-git
-  personal-site: example.com
+  role: debuggy dev
+  description: i work on various debuggy projects
+ 
+  social:
+     profile-picture-url: https://cdn.discordapp.com/attachments/919473654566379581/1096621611664277674/image.png
+     discord: test#0000
+     github: test-git
+     personal-site: example.com
 
   is-plural-system: true
   system-memberlist-redacted: false
 
 - name: test
-  team: community
-  role: test role 2
-  description: testing 3, 2, 1
-  profile-picture-url: https://example.com/  
+  team: development
+  role: test role
+  description: testing 1 2 3
 
-  discord: test#0000
-  github: test-git
-  personal-site: example.com
-
-  is-plural-system: false
-  system-memberlist-redacted: false
-
-- name: test
-  team: community
-  role: test role 2
-  description: testing 3, 2, 1
-  profile-picture-url: https://example.com/
-
-  discord: test#0000
-  github: test-git
-  personal-site: example.com
+  social:
+     profile-picture-url: https://cdn.discordapp.com/icons/912349224232943649/90c5433e15029bbdd96100408e23b7a9.webp
+     discord: test#0000
+     github: test-git
+     personal-site: example.com
 
   is-plural-system: true
   system-memberlist-redacted: true
+
+- name: test
+  team: development
+  role: test role
+  description: testing 1 2 3
+
+  social:
+     profile-picture-url: https://cdn.discordapp.com/icons/912349224232943649/90c5433e15029bbdd96100408e23b7a9.webp
+     discord: test#0000
+     github: test-git
+     personal-site: example.com
+
+  is-plural-system: false
+  system-memberlist-redacted: false
