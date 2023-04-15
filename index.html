@@ -34,42 +34,27 @@ description: The Debuggy home page.
                     <span class="redacted-info tooltip-text">Memberlist redacted by request.</span>
                 </div>
                 {% else %}
+                {% for member in card.plural-system-members %}
                 <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
+                {% endfor %}
                 {% endif %}
             </div>
             {% endif %}
 
             <p class="role">{{card.role}}</p>
             <p class="description line-clamp">{{card.description}}</p>
-            {% for social-link in card.social %}
-            {% if social-link %}
+            {% if card.social.github %}
             <div class="socials">
-                <a href="{{social-link}}"><i data-feather="globe">{{social-link}}</i></a>
+                <a href="https://github.com/{{card.social.github}}" title="GitHub"><i data-feather="globe">{{card.social.github}}</i></a>
             </div>
             {% endif %}
+            {% if card.social.links %}
+            {% for social-link in card.social.links %}
+            <div class="socials">
+                <a href="{{social-link[1]}}" title="{{social-link[0]}}"><i data-feather="globe">{{social-link[0]}}</i></a>
+            </div>
             {% endfor %}
+            {% endif %}
         </div>
     </i>
     {% endfor %}
