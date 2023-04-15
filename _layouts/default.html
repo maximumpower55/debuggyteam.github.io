@@ -8,10 +8,10 @@
 	<meta property="og:title" content="{%if page.title%}{{page.title}} | {%endif%}Debuggy"/>
 	<meta property="og:description" content="{{page.description}}"/>
 	{% if page.style %}
-	<link rel="stylesheet" href="/assets/css/{{page.style}}.css"/>
+	<link rel="stylesheet" href="assets/css/{{page.style}}.css"/>
 	{% endif %}
 	{% for style in page.styles %}
-	<link rel="stylesheet" href="/assets/css/{{style}}.css"/>
+	<link rel="stylesheet" href="assets/css/{{style}}.css"/>
 	{% endfor %}
 </head>
 <body>
