@@ -2,6 +2,7 @@
   team: development
   role: test role
   description: testing 1 2 3
+  profile-picture-url: https://example.com/
 
   discord: test#0000
   github: test-git
@@ -14,6 +15,7 @@
   team: community
   role: test role 2
   description: testing 3, 2, 1
+  profile-picture-url: https://example.com/  
 
   discord: test#0000
   github: test-git
@@ -26,6 +28,7 @@
   team: community
   role: test role 2
   description: testing 3, 2, 1
+  profile-picture-url: https://example.com/
 
   discord: test#0000
   github: test-git

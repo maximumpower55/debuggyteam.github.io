@@ -25,6 +25,7 @@ a {
 }
 
 main {
+	min-height: 100%;
 	max-width: 140ch;
 	margin-inline: auto;
 	text-align: center;
@@ -169,12 +170,21 @@ ul, ol {
 	}
 }
 
-.footer {
-	float: left;
-	width: 100vw;
-	background-color: var(--navbar-color);
+.debuggycord {
+	border: none;
+	padding: 15px 32px;
+	color: var(--text-color);
+	background-color: var(--debuggy-team);
 
-	margin: auto;
+	&:hover {
+		filter: saturate(200%);
+	}
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: 100vw 100vw 100vw;
 	padding: 10px;
+	background-color: var(--navbar-color);
  }
 
