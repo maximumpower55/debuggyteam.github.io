@@ -8,6 +8,20 @@
         padding: 5px;
         border-radius: 6px;
         opacity: 0.5;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -120px;
+    
+        &::after {
+            content: " ";
+            position: absolute;
+            top: 100%; /* At the bottom of the tooltip */
+            left: 50%;
+            margin-left: -10px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: var(--background-color) transparent transparent transparent;
+        }
     
         /* Tooltip text positioning */
         text-align: center;
@@ -16,9 +30,17 @@
         /* Tooltip coloring */
         background-color: var(--background-color);
         color: var(--text-color);
-    
-        &:hover {
-            visibility: visible;
-        }
     }
+
+    &:hover .tooltip-text {
+        visibility: visible;
+    }
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* number of lines to show */
+            line-clamp: 5; 
+    -webkit-box-orient: vertical;
+	overflow: hidden;
 }

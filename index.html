@@ -5,9 +5,6 @@ description: The Debuggy home page.
 
 <script src="https://unpkg.com/feather-icons"></script>
 
-<h1>yeef</h1>
-<p>How many yeefs can a yeef actually yeef?</p>
-
 <h1>The Debuggy Team</h1>
 <p>We are a group of people who like making Minecraft mods.</p>
 
@@ -17,12 +14,22 @@ description: The Debuggy home page.
     {% for card in site.data.members %}
     <i>
         <div class="profile-card">
-            <img class="profile-picture" src="{{card.social.profile-picture-url}}" alt="test">
+            {% if card.social.pfp-override %}
+            <img class="profile-picture" src="{{card.social.pfp-override}}" alt="{{card.name}}'s profile picture">
+            {% else %}
+            <img class="profile-picture" src="https://avatars.githubusercontent.com/{{card.social.github}}?size=256" alt="{{card.name}}'s profile picture">
+            {% endif %}
+
             <h1>{{card.name}}</h1>
+            {% if card.social.pronouns %}
+            <p class="pronouns">{{card.social.pronouns}}</p>
+            {% endif %}
+
+
             {% if card.is-plural-system==true %}
             <p class="plurality">Plural System</p>
             <div class="plural-avatars">
-                {% if card.system-memberlist-redacted==true %}
+                {% if card.is-system-memberlist-redacted==true %}
                 <div class="redacted-heart tooltip"><i data-feather="heart"></i>
                     <span class="redacted-info tooltip-text">Memberlist redacted by request.</span>
                 </div>
@@ -50,39 +57,25 @@ description: The Debuggy home page.
                 <i><img src="{{card.social.profile-picture-url}}"></i>
                 <i><img src="{{card.social.profile-picture-url}}"></i>
                 <i><img src="{{card.social.profile-picture-url}}"></i>
-
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                <i><img src="{{card.social.profile-picture-url}}"></i>
                 {% endif %}
             </div>
             {% endif %}
 
-            <p class="title">{{card.role}}</p>
-            <p class="description">{{card.description}}</p>
-            <!--unsure what to do here-->
+            <p class="role">{{card.role}}</p>
+            <p class="description line-clamp">{{card.description}}</p>
+            {% for social-link in card.social %}
+            {% if social-link %}
             <div class="socials">
-                <a href="#"><i data-feather="globe"></i></a>
-                <a href="#"><i data-feather="github"></i></a>
-                <a href="#"><i data-feather="gitlab"></i></a>
+                <a href="{{social-link}}"><i data-feather="globe">{{social-link}}</i></a>
             </div>
+            {% endif %}
+            {% endfor %}
         </div>
     </i>
     {% endfor %}
 </div>
 
+<!--
 <h2>Debuggy Community Team</h2>
 <p>Everyone listed here is involved with managing and moderating the Debuggy community spaces.</p>
 
@@ -107,6 +100,7 @@ description: The Debuggy home page.
         </div>
     </i>
 </div>
+-->
 
 <!--
 <footer class="footer">
