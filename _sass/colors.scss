@@ -1,9 +1,13 @@
 :root {
+    /* Common colors */
+    --debuggy-dark-blue: rgb(42, 48, 163);
+    --debuggy-blue: rgb(49, 56, 188);
+    --debuggy-light-blue: rgb(52, 59, 201);
+
     /* Main site colors */
     --background-color: hsl(0, 0%, 100%);
-    --navbar-color: rgb(224, 195, 195, .7);
-    --navbar-button-color: hsl(0, 13, 70);
-    --navbar-button-hover-color: hsl(0, 13, 80);
+    --navbar-color: rgb(49, 56, 188, .8);
+    --navbar-border-color: rgb(42, 48, 163, .8);
 
     /* Text and links */
     --link-color: hsl(240, 100%, 50%);

@@ -4,8 +4,11 @@ nav {
 	margin: 0;
 	margin-top: -1;
 	padding: 16px;
-	list-style-type: none;
-	justify-content: center;
+
+	display: flex;
+	flex-direction: row;
+
+	border-bottom: 3pt solid var(--navbar-border-color);
 	background-color: var(--navbar-color);
 
 	li {
@@ -20,13 +23,19 @@ nav {
 		border-radius: 3px;
 		margin: 0px 10px;
 		transition: all 250ms ease 0s;
-		background-color: var(--navbar-button-color);
+		color: white;
+		background-color: var(--debuggy-dark-blue);
 		text-decoration: none;
 
 		&:hover {
 			box-shadow: rgba(69, 69, 70, 0.47) 0px 0px 12pt;
-			background-color: var(--navbar-button-hover-color);
+			color: white;
+			background-color: var(--debuggy-light-blue);
 		}
+	}
+
+	a:first-child {
+		margin-right: auto;
 	}
 }
 

@@ -5,60 +5,68 @@ description: The Debuggy home page.
 
 <script src="https://unpkg.com/feather-icons"></script>
 
-<h1>The Debuggy Team</h1>
-<p>We are a group of people who like making Minecraft mods.</p>
+<div class="home">
+	<div class="home-card">
+		<h1>The Debuggy Team</h1>
+		<p>We are a group of people who like making Minecraft mods.</p>
+	</div>
 
-<h2>Debuggy Dev Team</h2>
-<p>Everyone listed here is involved with Debuggy projects code-wise.</p>
-<div class="profiles dev-team">
-    {% for card in site.data.members %}
-    <i>
-        <div class="profile-card">
-            {% if card.social.pfp-override %}
-            <img class="profile-picture" src="{{card.social.pfp-override}}" alt="{{card.name}}'s profile picture">
-            {% else %}
-            <img class="profile-picture" src="https://avatars.githubusercontent.com/{{card.social.github}}?size=256" alt="{{card.name}}'s profile picture">
-            {% endif %}
+	<div class="dev-team-text">
+		<h2>Debuggy Dev Team</h2>
+		<p>Everyone listed here is involved with Debuggy projects code-wise.</p>
+	</div>
 
-            <h1>{{card.name}}</h1>
-            {% if card.social.pronouns %}
-            <p class="pronouns">{{card.social.pronouns}}</p>
-            {% endif %}
-
-
-            {% if card.is-plural-system==true %}
-            <p class="plurality">Plural System</p>
-            <div class="plural-avatars">
-                {% if card.is-system-memberlist-redacted==true %}
-                <div class="redacted-heart tooltip"><i data-feather="heart"></i>
-                    <span class="redacted-info tooltip-text">Memberlist redacted by request.</span>
-                </div>
-                {% else %}
-                {% for member in card.plural-system-members %}
-                <i><img src="{{card.social.profile-picture-url}}"></i>
-                {% endfor %}
-                {% endif %}
-            </div>
-            {% endif %}
-
-            <p class="role">{{card.role}}</p>
-            <p class="description line-clamp">{{card.description}}</p>
-            {% if card.social.github %}
-            <div class="socials">
-                <a href="https://github.com/{{card.social.github}}" title="GitHub"><i data-feather="globe">{{card.social.github}}</i></a>
-            </div>
-            {% endif %}
-            {% if card.social.links %}
-            {% for social-link in card.social.links %}
-            <div class="socials">
-                <a href="{{social-link[1]}}" title="{{social-link[0]}}"><i data-feather="globe">{{social-link[0]}}</i></a>
-            </div>
-            {% endfor %}
-            {% endif %}
-        </div>
-    </i>
-    {% endfor %}
+	<div class="profiles dev-team">
+		{% for card in site.data.members %}
+		<i>
+			<div class="profile-card">
+				{% if card.social.pfp-override %}
+				<img class="profile-picture" src="{{card.social.pfp-override}}" alt="{{card.name}}'s profile picture">
+				{% else %}
+				<img class="profile-picture" src="https://avatars.githubusercontent.com/{{card.social.github}}?size=256" alt="{{card.name}}'s profile picture">
+				{% endif %}
+	
+				<h1>{{card.name}}</h1>
+				{% if card.social.pronouns %}
+				<p class="pronouns">{{card.social.pronouns}}</p>
+				{% endif %}
+	
+	
+				{% if card.is-plural-system==true %}
+				<p class="plurality">Plural System</p>
+				<div class="plural-avatars">
+					{% if card.is-system-memberlist-redacted==true %}
+					<div class="redacted-heart tooltip"><i data-feather="heart"></i>
+						<span class="redacted-info tooltip-text">Memberlist redacted by request.</span>
+					</div>
+					{% else %}
+					{% for member in card.plural-system-members %}
+					<i><img src="{{card.social.profile-picture-url}}"></i>
+					{% endfor %}
+					{% endif %}
+				</div>
+				{% endif %}
+	
+				<p class="role">{{card.role}}</p>
+				<p class="description line-clamp">{{card.description}}</p>
+				{% if card.social.github %}
+				<div class="socials">
+					<a href="https://github.com/{{card.social.github}}" title="GitHub"><i data-feather="globe">{{card.social.github}}</i></a>
+				</div>
+				{% endif %}
+				{% if card.social.links %}
+				{% for social-link in card.social.links %}
+				<div class="socials">
+					<a href="{{social-link[1]}}" title="{{social-link[0]}}"><i data-feather="globe">{{social-link[0]}}</i></a>
+				</div>
+				{% endfor %}
+				{% endif %}
+			</div>
+		</i>
+		{% endfor %}
+	</div>
 </div>
+
 
 <!--
 <h2>Debuggy Community Team</h2>
