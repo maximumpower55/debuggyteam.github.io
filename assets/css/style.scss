@@ -27,7 +27,7 @@ a {
 
 main {
 	min-height: 100%;
-	max-width: 140ch;
+	max-width: 90em;
 	margin-inline: auto;
 	text-align: center;
 }
@@ -50,7 +50,7 @@ ul, ol {
 }
 
 .profiles {
-	
+
 	h1 {
 		margin: 0;
 		font-size: 28px;
@@ -88,7 +88,7 @@ ul, ol {
 			height: 30px;
 		}
 	}
-	
+
 	.role {
 		font-size: 18px;
 	}
@@ -105,11 +105,13 @@ ul, ol {
 }
 
 .profiles.dev-team {
-	display: grid;
-	row-gap: 73px;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	place-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 250px;
+	justify-content: center;
+	align-content: top;
+	flex-shrink: 0;
+	flex-grow: 1;
 
 	a {
 		color: black;
@@ -122,6 +124,8 @@ ul, ol {
 	.profile-card {
 		background-color: var(--debuggy-team);
 		border: 3px solid var(--debuggy-team-border);
+
+		margin: 20px 40px 20px 40px;
 	}
 
 	.profile-picture {
