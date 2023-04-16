@@ -1,8 +1,9 @@
 :root {
     /* Main site colors */
     --background-color: hsl(0, 0%, 100%);
-    --navbar-color: hsl(0, 13%, 88%);
-    --navbar-select-color: hsl(0, 0%, 100%);
+    --navbar-color: rgb(224, 195, 195, .7);
+    --navbar-button-color: hsl(0, 13, 70);
+    --navbar-button-hover-color: hsl(0, 13, 80);
 
     /* Text and links */
     --link-color: hsl(240, 100%, 50%);

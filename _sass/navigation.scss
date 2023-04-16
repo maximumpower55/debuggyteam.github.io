@@ -13,12 +13,19 @@ nav {
 	}
 
 	a {
-		padding: 16px;
+		padding: 10.6px;
+		box-shadow: rgba(0, 0, 0, 0.58) 0px 0px 9pt;
+		border: 0px;
+		outline: 0px;
+		border-radius: 3px;
+		margin: 0px 10px;
+		transition: all 250ms ease 0s;
+		background-color: var(--navbar-button-color);
 		text-decoration: none;
 
 		&:hover {
-			padding: 16px;
-			background-color: var(--navbar-select-color);
+			box-shadow: rgba(69, 69, 70, 0.47) 0px 0px 12pt;
+			background-color: var(--navbar-button-hover-color);
 		}
 	}
 }
