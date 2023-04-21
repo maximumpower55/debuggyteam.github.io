@@ -1,22 +1,21 @@
 :root {
-    /* Common colors */
-    --debuggy-dark-blue: rgb(42, 48, 163);
-    --debuggy-blue: rgb(49, 56, 188);
-    --debuggy-light-blue: rgb(52, 59, 201);
-
     /* Main site colors */
-    --background-color: hsl(0, 0%, 100%);
+    --background-color: rgb(34, 39, 133);
     --navbar-color: rgb(49, 56, 188, .8);
     --navbar-border-color: rgb(42, 48, 163, .8);
 
     /* Text and links */
     --link-color: hsl(240, 100%, 50%);
     --link-color-hover: hsl(177, 70%, 41%);
-    --text-color: hsl(0, 0%, 0%);
+    --text-color: rgb(192, 195, 248);
 
     /* Miscellaneous Colors */
-    --debuggy-team: hsl(237, 100%, 79%);
-    --debuggy-team-border: hsl(237, 84%, 64%);
+    --debuggy-dark-blue: rgb(42, 48, 163);
+    --debuggy-blue: rgb(49, 56, 188);
+    --debuggy-light-blue: rgb(52, 59, 201);
+
+    --card-color: hsl(237, 100%, 79%);
+    --card-border-color: hsl(237, 84%, 64%);
 
     --debuggy-moderation: hsl(9, 69%, 68%);
     --debuggy-moderation-border: hsl(9, 64%, 55%);

@@ -11,6 +11,7 @@
 
 h1, h2, p, li, a {
 	font-family: var(--font);
+	text-rendering: optimizeLegibility;
 }
 
 p {
@@ -27,7 +28,6 @@ a {
 
 main {
 	min-height: 100%;
-	max-width: 90em;
 	margin-inline: auto;
 	text-align: center;
 }
@@ -40,6 +40,36 @@ main {
 /** Fix annoying padding */
 body {
 	margin: 0;
+
+	background-color: var(--background-color);
+	background-image: url("../background.png");
+	background-repeat: repeat;
+	background-size: 500px;
+}
+
+.section {
+
+	display: block;
+	padding: 3rem;
+
+}
+
+.solid {
+
+	box-shadow: rgba(0, 0, 0, 0.58) 0px 0px 9pt;
+	background-color: var(--debuggy-dark-blue);
+	color: var(--text-color);
+	border: 12px solid var(--background-color);
+	border-radius: 8px;
+	margin-left: 100px;
+	margin-right: 100px;
+
+}
+
+.below {
+
+	margin-top: 7rem;
+
 }
 
 /** Lists don't play super well with being centered */
@@ -49,21 +79,11 @@ ul, ol {
 	text-align: left;
 }
 
-.home {
-
-	justify-content: center;
-	padding: 3rem;
-
-	.dev-team-text {
-		margin-top: 10%;
-	}
-
-}
-
 .home-card {
 
-	background-color: var(--debuggy-team);
-	border: 3px solid var(--debuggy-team-border);
+	box-shadow: rgba(0, 0, 0, 0.58) 0px 0px 9pt;
+	background-color: var(--card-color);
+	border: 3px solid var(--card-border-color);
 
 	max-width: 30rem;
 	margin-left: auto;
@@ -73,6 +93,8 @@ ul, ol {
 }
 
 .profiles {
+
+	color: black;
 
 	h1 {
 		margin: 0;
@@ -148,15 +170,15 @@ ul, ol {
 	}
 
 	.profile-card {
-		background-color: var(--debuggy-team);
-		border: 3px solid var(--debuggy-team-border);
+		background-color: var(--card-color);
+		border: 3px solid var(--card-border-color);
 
-		margin: 5rem 0.5rem 0;
-		height: 80%;
+		margin: 5rem 2rem 0;
+		height: 23rem;
 	}
 
 	.profile-picture {
-		border: 3px solid var(--debuggy-team-border);
+		border: 3px solid var(--card-border-color);
 	}
 }
 
@@ -189,7 +211,7 @@ ul, ol {
 	border: none;
 	padding: 15px 32px;
 	color: var(--text-color);
-	background-color: var(--debuggy-team);
+	background-color: var(--card-color);
 
 	&:hover {
 		filter: saturate(200%);
