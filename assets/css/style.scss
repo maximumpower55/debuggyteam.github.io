@@ -93,7 +93,10 @@ ul, ol {
 }
 
 .profiles {
-
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 	color: black;
 
 	h1 {
@@ -104,6 +107,14 @@ ul, ol {
 	img {
 		border-radius: 50%;
 		object-fit: cover;
+	}
+
+	a {
+		color: black;
+
+		&:hover {
+			color:chartreuse;
+		}
 	}
 
 	.profile-card {
@@ -156,19 +167,6 @@ ul, ol {
 }
 
 .profiles.dev-team {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
-	a {
-		color: black;
-
-		&:hover {
-			color: chartreuse;
-		}
-	}
-
 	.profile-card {
 		background-color: var(--card-color);
 		border: 3px solid var(--card-border-color);
@@ -183,27 +181,30 @@ ul, ol {
 }
 
 .profiles.community-team {
-	display: grid;
-	row-gap: 73px;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	place-items: center;
-
-	a {
-		color: black;
-
-		&:hover {
-			color:chartreuse;
-		}
-	}
-
 	.profile-card {
-		background-color: var(--debuggy-moderation);
-		border: 3px solid var(--debuggy-moderation-border);
+		background-color: var(--moderation-card-color);
+		border: 3px solid var(--moderation-card-border-color);
+
+		margin: 5rem 2rem 0;
+		height: 23rem;
 	}
 
 	.profile-picture {
-		border: 3px solid var(--debuggy-moderation-border);
+		border: 3px solid var(--moderation-card-border-color);
+	}
+}
+
+.profiles.contributors {
+	.profile-card {
+		background-color: #2ac48e;
+		border: 3px solid #197655;
+
+		margin: 5rem 2rem 0;
+		height: 23rem;
+	}
+
+	.profile-picture {
+		border: 3px solid #197655;
 	}
 }
 

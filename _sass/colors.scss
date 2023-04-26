@@ -17,9 +17,10 @@
     --card-color: hsl(237, 100%, 79%);
     --card-border-color: hsl(237, 84%, 64%);
 
-    --debuggy-moderation: hsl(9, 69%, 68%);
-    --debuggy-moderation-border: hsl(9, 64%, 55%);
+    --moderation-card-color: hsl(9, 69%, 68%);
+    --moderation-card-border-color: hsl(9, 64%, 55%);
 
+    /* Why this broke i have no clue  --woodie */
     @media screen and (prefers-color-scheme: dark) {
         html {
             /* Main site colors dark theme */
