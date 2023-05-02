@@ -3,16 +3,25 @@ title: Home
 description: The Debuggy home page.
 ---
 
-<script src="https://unpkg.com/feather-icons"></script>
-
-<section class="section">
-	<div class="home-card">
+<section>
+	<div class="card">
 		<h1>The Debuggy Team</h1>
 		<p>We are a group of people who like making Minecraft mods.</p>
+
+		<div class="button-grid">
+			<a href="{{site.data.links.discord}}" style="background-color: var(--discord-button-color); color: white;">
+				<img class="icon" src="assets/discord-mark-white.svg"/>
+				<span>Discord</span>
+			</a>
+			<a href="{{site.data.links.github}}" style="background-color: var(--github-button-color); color: black;">
+				<i class="icon" data-feather="github"></i>
+				<span>GitHub</span>
+			</a>
+		</div>
 	</div>
 </section>
 
-<section class="section solid below">
+<section class="solid below">
 	<main>
 		<h2>Debuggy Dev Team</h2>
 		<p>Everyone listed here is involved with Debuggy projects code-wise.</p>
@@ -148,7 +157,3 @@ description: The Debuggy home page.
     <p>Footer</p>
 </footer>
 -->
-
-<script>
-    feather.replace()
-</script>

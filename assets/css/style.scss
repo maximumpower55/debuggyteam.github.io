@@ -6,7 +6,7 @@
 @import "navigation";
 
 :root {
-	--font: Arial, Helvetica, sans-serif;
+	--font: Poppins, sans-serif;
 }
 
 h1, h2, h3, p, li, a {
@@ -26,12 +26,6 @@ a {
 	}
 }
 
-main {
-	min-height: 100%;
-	margin-inline: auto;
-	text-align: center;
-}
-
 .updated {
 	font-size: 1.25rem;
 	margin-top: -20px;
@@ -47,10 +41,14 @@ body {
 	background-size: 500px;
 }
 
-.section {
+section {
 
 	display: block;
 	padding: 3rem;
+
+	min-height: 100%;
+	margin-inline: auto;
+	text-align: center;
 
 }
 
@@ -77,19 +75,6 @@ ul, ol {
 	max-width: 80ch;
 	margin-inline: auto;
 	text-align: left;
-}
-
-.home-card {
-
-	box-shadow: rgba(0, 0, 0, 0.58) 0px 0px 9pt;
-	background-color: var(--card-color);
-	border: 3px solid var(--card-border-color);
-
-	max-width: 30rem;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 8px;
-
 }
 
 .profiles {

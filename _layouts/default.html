@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
 	<meta charset="utf-8"/>
 	<title>{%if page.title%}{{page.title}} | {%endif%}Debuggy</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="theme-color" content="#609FFF"/>
+	<meta name="description" content="{{page.description}}"/>
 	<meta property="og:title" content="{%if page.title%}{{page.title}} | {%endif%}Debuggy"/>
 	<meta property="og:description" content="{{page.description}}"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;&display=swap">
 	{% if page.style %}
 	<link rel="stylesheet" href="assets/css/{{page.style}}.css"/>
 	{% endif %}
@@ -16,10 +18,10 @@
 </head>
 <body>
 
+<script src="https://unpkg.com/feather-icons" type="text/javascript"></script>
 {% include navigation.html %}
+{{content}}
+<script> feather.replace() </script>
 
-<main>
-	{{content}}
-</main>
 </body>
 </html>

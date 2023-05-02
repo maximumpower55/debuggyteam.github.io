@@ -44,3 +44,47 @@
     -webkit-box-orient: vertical;
 	overflow: hidden;
 }
+
+.card {
+
+	box-shadow: rgba(0, 0, 0, 0.58) 0px 0px 9pt;
+	background-color: var(--card-color);
+	border: 3px solid var(--card-border-color);
+
+	max-width: 30rem;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 8px;
+
+}
+
+.button-grid {
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	.icon {
+		height: 1.5em;
+		width: 1.5em;
+	}
+
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 10px 10px;
+
+		padding: 0.5em;
+		border: 0px;
+		outline: 0px;
+		border-radius: 5px;
+		text-decoration: none;
+
+		span {
+			padding-left: 0.5rem;
+		}
+	}
+
+}
