@@ -204,10 +204,14 @@ ul, ol {
 	}
 }
 
-.footer {
-	display: grid;
-	grid-template-columns: 100vw 100vw 100vw;
+footer {
 	padding: 10px;
-	background-color: var(--navbar-color);
+	margin-top: 33vh;
+	background-color: var(--debuggy-dark-blue);
+	color: var(--text-color);
+	
+	p {
+		text-align: center;
+	}
  }
 

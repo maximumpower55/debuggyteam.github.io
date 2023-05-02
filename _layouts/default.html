@@ -15,12 +15,14 @@
 	{% for style in page.styles %}
 	<link rel="stylesheet" href="assets/css/{{style}}.css"/>
 	{% endfor %}
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico"
 </head>
 <body>
 
 <script src="https://unpkg.com/feather-icons" type="text/javascript"></script>
 {% include navigation.html %}
 {{content}}
+<footer><p>Copyright © 2023 Debuggy</p></footer>
 <script> feather.replace() </script>
 
 </body>
