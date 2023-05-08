@@ -15,7 +15,7 @@ nav {
 		align-items: center;
 		justify-content: center;
 		display: flex;
-		min-width: 7rem;
+		min-width: calc(7rem + 8px);
 		margin: 0px 10px;
 		text-decoration: none;
 
